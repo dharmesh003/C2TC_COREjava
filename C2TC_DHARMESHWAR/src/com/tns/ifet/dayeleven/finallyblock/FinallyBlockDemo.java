@@ -13,7 +13,7 @@ public class FinallyBlockDemo {
 			int number = scanner.nextInt();
 			System.out.println(number % 2 == 0 ? number + " is Even" : number + " is Odd");
 		} catch (InputMismatchException e) {
-			System.out.println("Invalid input...");
+			System.err.println("Invalid input...");
 
 		} finally {
 			System.out.println("In Finally....");
